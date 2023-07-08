@@ -20,5 +20,5 @@ st.subheader(f'{option} and {option1}')
 df = pd.read_csv('happy.csv')
 
 
-figure = px.scatter(x=df[option.lower().replace(' ', '_')], y=df[option1.lower()], labels={'x': option, 'y': option1})
+figure = px.scatter(x=df[option.lower().replace(' ', '_')], y=df[option1.lower().replace(' ', '_')], labels={'x': option, 'y': option1})
 st.plotly_chart(figure)
